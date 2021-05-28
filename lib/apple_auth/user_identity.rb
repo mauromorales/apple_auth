@@ -19,6 +19,10 @@ module AppleAuth
       token_data.symbolize_keys
     end
 
+    def decode
+      decoded_jwt
+    end
+
     private
 
     def decoded_jwt
